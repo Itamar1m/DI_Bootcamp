@@ -1,0 +1,83 @@
+ h1 {
+     margin: auto;
+     color: rgb(250, 219, 219);
+     text-align: center;
+
+     height: 60px;
+     background-color: rgba(16, 27, 51, 0.35);
+     margin: auto;
+     border-radius: 12px;
+     font-family: 'Fraunces', serif;
+ }
+ a:link ,a:visited{
+     position: relative;
+     right: 680px;
+     font-size: 17px;
+     top:19px;
+     color: rgb(250, 219, 219);
+    
+ }
+
+ u{
+     position: relative;
+     top:12px;
+     font-size: 28px;
+ }
+ 
+
+ .clothes {
+     height: 350px;
+     display: inline-block;
+     margin: 25px;
+     position: relative;
+ }
+
+ .image {
+     height: 300px;
+
+ }
+
+ button {
+     margin: auto;
+     display: block;
+     border-radius: 20px;
+     color: rgb(54, 52, 52);
+     border: solid black.5px;
+
+ }
+
+ button:hover {
+     background-color: rgb(133, 147, 228);
+     cursor: pointer;
+
+ }
+
+ .description,
+ .price {
+     text-align: center;
+     margin: 0 auto;
+     display: block;
+     margin: 5px;
+     font-family: cursive;
+ }
+
+ s {
+     opacity: .4;
+     color: black;
+ }
+
+ .new {
+     position: absolute;
+     height: 40px;
+     left: 2px;
+     top: 0px;
+ }
+
+ .price {
+     color: rgb(9, 110, 149);
+ }
+
+ body {
+     text-align: center;
+    }
+

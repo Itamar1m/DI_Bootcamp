@@ -1,0 +1,59 @@
+h2 {
+    text-align: center;
+    color: rgb(236, 168, 168);
+    opacity: .7;
+    font-size: 50px;
+    font-family: 'Fraunces', serif;
+
+
+}
+
+form {
+    
+    background-color: rgba(56, 74, 109, 0.2);
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.input {
+    margin: 30px;
+}
+    .email {
+        position: relative;
+        left: 23px;
+
+    }
+
+    .password {
+        position: relative;
+        left: 5px;
+    }
+    button{
+        border-radius: 5px;
+        border:.2px solid rgb(26, 25, 25,.4);
+    }
+    label{
+        font-family: 'Fraunces', serif;
+   
+        font-size: 20px;
+        color: rgb(245, 150, 150);
+    }
+    input{
+        border-radius: 8px;
+        border :solid rgb(10, 10, 10,.8) .3px;
+       
+    }
+    footer{
+        text-align: center;
+    }
+    .icon2{
+        color: rgb(235, 183, 183);
+        font-size: 85px;
+        position: relative;
+        top:15px;
+    }
+/* Login Page css */

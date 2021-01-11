@@ -1,0 +1,46 @@
+nav{
+    height: 50px;
+    background-color: rgba(16, 27, 51, 0.35);;
+    position: relative;border-radius: 12px;
+
+
+}
+ul{
+    position: absolute;
+    right:10px;
+    bottom: 2%;
+
+}
+li{
+    display: inline-block;
+    padding-right: 20px;   
+    color: white;
+}
+ .icon{
+     position:absolute;
+     left:30px;    
+     bottom: 6px;
+    font-size: 42px;
+     color: rgb(250, 219, 219);
+ }
+ a:visited, a:link{
+    color: rgb(250, 219, 219);
+    font-size: 20px;
+    
+ }
+
+ footer{
+    display: block;
+     bottom: 50px;
+position:relative;
+top:100px;  
+text-align: center;
+  
+ }
+ .icon2{
+     display: block;
+     text-align: center;
+     position: relative;
+     color: rgb(235, 183, 183);
+     font-size: 500px;
+ }
