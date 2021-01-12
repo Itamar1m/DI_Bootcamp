@@ -1,11 +1,15 @@
 nav{
     display: flex;
     grid-gap :20px;
-    background-color: rgb(15, 85, 50);
+    background-color: rgb(34, 148, 91);
     height:60px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 
+}
+body,html{
+    height: 100%;
 }
 button{
     height:40px;
@@ -14,4 +18,21 @@ button{
     font-size: 10px;}
     h4{
         color: white;
+    }
+   main{
+        background-image:url(https://trumpwallpapers.com/wp-content/uploads/Laptop-Wallpapers-HD-Free-05-1920-x-1080.jpg) ;
+       height: 700px;
+        background-size: cover;
+    
+  
+        background-size: 100%; 
+        background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+        
+       
+        
+        
+
     }

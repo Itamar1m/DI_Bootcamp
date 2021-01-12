@@ -7,10 +7,16 @@ nav {
 
 }
 body{
-    height: 70%;
+   
     background-image: url(https://i.pinimg.com/originals/d2/e1/cc/d2e1cc5305bf9ce1d926a48f1898ea30.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
     margin: 0px;
 }
+
+
 
 ul {
 display: inline-block;
@@ -74,15 +80,22 @@ p2 {
     padding-left: 1000px;
     padding-right: 10px;
     font-family:'Orbitron', sans-serif;
+ 
 
 
 }
 footer{
     color: ivory;
     background-color: rgb(47, 23, 23);
-    height: 100px;
+    height: 120px;
     font-size: 20px;
-    margin-top: 2px;
+   
+    bottom: 0px;
+    position: relative;
+    top: 120px;
+    margin: 0px;
+ 
+
 }
 .comics{
     padding-right: 25px;
