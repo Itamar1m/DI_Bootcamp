@@ -1,0 +1,68 @@
+.box1,
+.box2,
+.box3 ,
+.box4{
+    height: 30px;
+    width: 100%;
+
+}
+
+.box1 {
+    background-color: rgb(216, 175, 122);
+}
+
+.box2 {
+    background-color: rgb(167, 121, 61);
+}
+
+.box3 {
+    background-color: rgb(218, 140, 39);
+}
+.box4{
+    background-color: rgb(126, 75, 8);
+}
+
+
+
+.beige {
+
+    display: flex;
+    justify-content: ;
+
+}
+
+.B {
+    width: 150px; width: 150px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 1.5px;
+}
+
+/* pattern B */
+.C{
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 1.5px;
+
+}
+/* Pattern C*/
+.square{
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+} 
+.d{
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+
+
+}

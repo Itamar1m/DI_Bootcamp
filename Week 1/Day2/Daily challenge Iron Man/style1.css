@@ -1,0 +1,149 @@
+nav {
+    background-color: rgb(75, 37, 37);
+    height: 90px;
+    text-align: center;
+    margin-bottom: 3px;
+
+
+}
+body{
+    height: 70%;
+    background-image: url(https://i.pinimg.com/originals/d2/e1/cc/d2e1cc5305bf9ce1d926a48f1898ea30.jpg);
+    margin: 0px;
+}
+
+ul {
+display: inline-block;
+
+
+}
+
+.logo {
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 15px;
+
+}
+
+li {
+    display: inline-block;
+    font-family: fantasy;
+    font-size: 25px;
+    color: rgb(205, 222, 238);
+    opacity: .8;
+
+}
+
+.home,
+.blog,
+.pictures {
+    padding-right: 80px;
+}
+
+.home:hover,
+.blog:hover,
+.pictures:hover {
+    cursor: pointer;
+    color: rgb(234, 237, 240);
+
+
+}
+
+.logo {
+    padding-right: 600px;
+    height: 80px;
+}
+
+
+
+p1 {
+
+    color: rgb(168, 240, 151);
+    font-size: 160px;
+
+    opacity: .15;
+    padding-left: 40px;
+}
+
+p2 {
+    display: block;
+    color: rgb(95, 219, 91);
+    opacity: .85;
+    padding-top: 7px;
+    font-size:17px;
+    padding-left: 1000px;
+    padding-right: 10px;
+    font-family:'Orbitron', sans-serif;
+
+
+}
+footer{
+    color: ivory;
+    background-color: rgb(47, 23, 23);
+    height: 100px;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.comics{
+    padding-right: 25px;
+    padding-left:25px;
+
+}
+a:link,a:visited{
+    text-decoration: none;
+    color: lightgreen;
+    }
+.movie{
+    padding-right: 900px;
+}
+.links{
+padding-top: 40px;    
+    }
+   
+@media screen and (max-width:615px)
+{.logo {
+    height: 40px;
+width: 40px;
+padding: 0px;}
+li {
+    font-size: 15px;}
+    
+
+
+
+}
+    
+    @media  screen  and (max-width: 1280px) {
+        p1{
+            font-size: 100px;
+        }
+        p2{padding-top: 3px;
+            font-size:13px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+            .logo {
+                padding-right: 0px;}
+                .movie{
+                    padding-right:5px;
+           
+        
+            }
+        }
+            @media screen and (max-width:480px)
+           { li {
+                font-size: 12px;}
+                .logo {
+                    height: 30px;
+                width: 30px;
+                padding: 0px;}
+                footer{
+                    font-size: 15px;
+                }
+                p1{
+                   font-size:  60px;
+                }
+        
+         
+            }
+              
