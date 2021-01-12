@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    grid-gap :20px;
+    background-color: rgb(15, 85, 50);
+    height:60px;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    height:40px;
+    border-radius: 5px;
+    background-color: rgb(33, 122, 194);
+    font-size: 10px;}
+    h4{
+        color: white;
+    }
