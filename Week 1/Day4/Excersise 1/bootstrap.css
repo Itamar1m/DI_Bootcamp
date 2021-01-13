@@ -1,0 +1,104 @@
+main{
+    background-image: url(https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.8b2a58cb.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+   padding-top: 50px;
+   padding-bottom: 80px;
+   border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+  
+   
+
+} 
+/* footer{
+    background-color: aquamarine;
+    height: 300px;
+    border-radius: 10px;
+    margin: 8px;
+} */
+
+.top{
+   color:white;
+    font-size: 20px;
+}
+.links{
+}
+span{
+    margin-right:8px;
+    font-size: 13px;
+    color:white;
+}
+
+.middle{
+    
+    height: 300px;
+    width:420px;
+    flex-direction: column; 
+
+}
+.writing{
+    color: rgba(245, 222, 179, 0.84);
+ 
+    font-size: 30px;
+
+}
+button{
+ margin: 5px;
+ height: 60px;
+ width: 90px;}
+ .buttona{
+     opacity: .6;
+
+ }
+.buttonb{
+    background-color: transparent;
+    border: rgba(22, 22, 22, 0.253) .5px solid;
+
+}
+.buttonb:hover{
+    background-color: rgba(216, 191, 216, 0.219);
+    border:  rgba(22, 22, 22, 0.329) 2px solid; 
+
+}
+/* Footer */
+/* .fa{
+    border: 2px solid black;
+    height: 100%;
+
+
+} */
+.icon{
+    font-size: 40px;
+    opacity: .3;
+}
+.mid{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.lm{
+    opacity: .6;
+}
+@media only screen and (max-width:580px){
+
+    .middle{
+    
+        height: 200px;
+        width:310px;
+    
+    }
+    .writing{
+        font-size: 18px;
+    }
+    button{
+        margin: 3px;
+        height: 40px;
+        width: 60px;
+    }
+        .mid{
+        margin: 0px;
+        }
+}
