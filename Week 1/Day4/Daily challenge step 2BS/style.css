@@ -1,0 +1,35 @@
+/* .top{
+    border: 1px solid black;
+}
+.favs{
+    border: 1px solid rgb(121, 58, 58);
+}
+.top{
+    border: 1px solid green;
+} */
+.list{
+    /* border: 1px solid red; */
+   margin-top:20px ;
+   padding-top: 10px;
+   border-radius: 10px;
+   background-color: rgba(231, 227, 227, 0.801);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+input{
+    width: 140px;
+    border-radius: 5px;
+}
+/* .line{
+    width: 3px;
+    height: 100px;
+ background-color: rgba(231, 227, 227, 0.801);
+ display: inline-block;
+ margin-right: 2px;
+} */
+.grey{
+    background-color: rgba(202, 199, 199, 0.979);
+}
+
+

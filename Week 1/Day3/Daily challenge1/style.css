@@ -1,25 +1,25 @@
-.main{
-    display:flex;
+.main {
+    display: flex;
     justify-content: space-between;
 }
-.right{
+
+
+.side {
     display: flex;
     flex-direction: column;
     grid-gap: 10px;
 }
 
-.box{
+.box {
     height: 50px;
     background-color: yellow;
     width: 50px;
-    border: solid black .3px;}
-    .center{
-        display: flex;
-        grid-gap: 10px;
-        align-items: center;
-    }
-    .left{
-        display: flex;
-        grid-gap: 10px;
-        flex-direction: column;
-    }
+    border: solid black .3px;
+}
+
+.center {
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+}
+

@@ -1,0 +1,42 @@
+
+.list{
+    /* border: 1px solid red; */
+   margin-top:20px ;
+   padding-top: 10px;
+   border-radius: 10px;
+   background-color: rgba(231, 227, 227, 0.801);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+input{
+    width: 140px;
+    border-radius: 5px;
+}
+h5{
+   
+    opacity: .7;
+}
+/* .line{
+    width: 3px;
+    height: 100px;
+ background-color: rgba(231, 227, 227, 0.801);
+ display: inline-block;
+ margin-right: 2px;
+} */
+.grey{
+    background-color: rgba(202, 199, 199, 0.979);
+}
+body{
+    padding: 8px;
+}
+.h{
+    height: 300px;
+}
+li{
+    color: rgb(72, 72, 228);
+    list-style-type: none;
+ position: relative;
+ right: 22px;
+}
+
