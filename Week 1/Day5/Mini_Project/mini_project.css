@@ -1,75 +1,71 @@
-.box{
-    color: whitesmoke;
-    
+body {
+    width: 100%;
 }
-html{
-    width:100%;
-}
-.links,.dropdown{
-    font-size: 12px;
-}
-.dropdown{
-    width: 90px;
-    background: rgba(75, 70, 97, 0.692);
-}
-.top{
-    background: rgba(44, 39, 66, 0.692);
+
+
+
+.top {
+    background-color: rgba(99, 91, 138, 0.692) !important;
     position: sticky;
     top: 0px;
 
+
+
 }
-.rowa{
-    color: white;}
-  
-.a{
+
+.a {
     height: 25px;
     width: 55px;
     font-size: 8px;
- 
+    position: relative;
+    left: 400px;
+
+
 }
-.btn-light:hover{
+
+.btn-light:hover {
     background-color: rgba(228, 216, 198, 0.685);
 }
-::placeholder{
+
+::placeholder {
     font-size: 11px;
 }
-input{
+
+input {
     height: 25px;
     border-radius: 3px;
     border: solid black .6px;
-    margin-right:5px;
-    margin-left: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    left: 400px;
 }
-.top{
+
+.top {
     padding: 10px;
 }
-.email{
+
+.email {
     justify-content: center;
     display: flex;
 }
-.btn-primary{
+
+.btn-primary {
     margin-top: 15px;
 }
-.bottom{
+
+.bottom {
     position: relative;
     top: 200px;
-
 }
 
-h5{
-    margin-bottom: ;
-}
-/* .label{
-    border-radius: 10px;
-    background-color: cornflowerblue;
-    font-size: 18px;
-  
-} */
-.badge{
+
+.badge {
     background-color: crimson;
-  
+
 }
-.b{
+
+.b {
     width: 100px;
     height: 30px;
     display: inline-flex;
@@ -78,16 +74,4 @@ h5{
     background-color: darkgray;
     font-size: 10px;
 }
-ul{
-display: flex;
-    padding: 0;
-    margin: 0;
-}
-.myli{
-    background:  rgba(75, 70, 97, 0.692)!important;
-    border: rgba(17, 14, 29, 0.692) !important; 
 
-}
-@media only screen and (max-width: 600px){
-
-}
