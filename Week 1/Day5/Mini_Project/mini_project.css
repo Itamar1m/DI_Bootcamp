@@ -1,0 +1,93 @@
+.box{
+    color: whitesmoke;
+    
+}
+html{
+    width:100%;
+}
+.links,.dropdown{
+    font-size: 12px;
+}
+.dropdown{
+    width: 90px;
+    background: rgba(75, 70, 97, 0.692);
+}
+.top{
+    background: rgba(44, 39, 66, 0.692);
+    position: sticky;
+    top: 0px;
+
+}
+.rowa{
+    color: white;}
+  
+.a{
+    height: 25px;
+    width: 55px;
+    font-size: 8px;
+ 
+}
+.btn-light:hover{
+    background-color: rgba(228, 216, 198, 0.685);
+}
+::placeholder{
+    font-size: 11px;
+}
+input{
+    height: 25px;
+    border-radius: 3px;
+    border: solid black .6px;
+    margin-right:5px;
+    margin-left: 2px;
+}
+.top{
+    padding: 10px;
+}
+.email{
+    justify-content: center;
+    display: flex;
+}
+.btn-primary{
+    margin-top: 15px;
+}
+.bottom{
+    position: relative;
+    top: 200px;
+
+}
+
+h5{
+    margin-bottom: ;
+}
+/* .label{
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    font-size: 18px;
+  
+} */
+.badge{
+    background-color: crimson;
+  
+}
+.b{
+    width: 100px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: darkgray;
+    font-size: 10px;
+}
+ul{
+display: flex;
+    padding: 0;
+    margin: 0;
+}
+.myli{
+    background:  rgba(75, 70, 97, 0.692)!important;
+    border: rgba(17, 14, 29, 0.692) !important; 
+
+}
+@media only screen and (max-width: 600px){
+
+}

@@ -1,19 +1,20 @@
-main{
+main {
     background-image: url(https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.8b2a58cb.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-   padding-top: 50px;
-   padding-bottom: 80px;
-   border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  
-  
-   
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 
-} 
+
+
+
+}
+
 /* footer{
     background-color: aquamarine;
     height: 300px;
@@ -21,49 +22,58 @@ main{
     margin: 8px;
 } */
 
-.top{
-   color:white;
+.top {
+    color: white;
     font-size: 20px;
 }
-.links{
-}
-span{
-    margin-right:8px;
+
+.links {}
+
+span {
+    margin-right: 8px;
     font-size: 13px;
-    color:white;
+    color: white;
 }
 
-.middle{
-    
+.middle {
+
     height: 300px;
-    width:420px;
-    flex-direction: column; 
+    width: 420px;
+    flex-direction: column;
 
 }
-.writing{
+
+.writing {
     color: rgba(245, 222, 179, 0.84);
- 
+
     font-size: 30px;
 
 }
-button{
- margin: 5px;
- height: 60px;
- width: 90px;}
- .buttona{
-     opacity: .6;
 
- }
-.buttonb{
+button {
+    margin: 5px;
+    height: 60px;
+    width: 90px;
+}
+
+.buttona {
+    opacity: .6;
+
+}
+
+.buttonb {
     background-color: transparent;
     border: rgba(22, 22, 22, 0.253) .5px solid;
+    opacity: .7;
 
 }
-.buttonb:hover{
+
+.buttonb:hover {
     background-color: rgba(216, 191, 216, 0.219);
-    border:  rgba(22, 22, 22, 0.329) 2px solid; 
+    border: rgba(22, 22, 22, 0.329) 2px solid;
 
 }
+
 /* Footer */
 /* .fa{
     border: 2px solid black;
@@ -71,34 +81,40 @@ button{
 
 
 } */
-.icon{
+.icon {
     font-size: 40px;
     opacity: .3;
 }
-.mid{
+
+.mid {
     margin-left: 45px;
     margin-right: 45px;
 }
-.lm{
+
+.lm {
     opacity: .6;
 }
-@media only screen and (max-width:580px){
 
-    .middle{
-    
+@media only screen and (max-width:580px) {
+
+    .middle {
+
         height: 200px;
-        width:310px;
-    
+        width: 310px;
+
     }
-    .writing{
+
+    .writing {
         font-size: 18px;
     }
-    button{
+
+    button {
         margin: 3px;
         height: 40px;
         width: 60px;
     }
-        .mid{
+
+    .mid {
         margin: 0px;
-        }
+    }
 }
