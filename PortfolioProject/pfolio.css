@@ -94,7 +94,7 @@ button:hover {
     background-size: cover;
     background-attachment: fixed;
     opacity: 0;
-    height: 750px;
+    /* height: 750px; */
     width: 100%;
     z-index: 1;
 opacity: .3;
@@ -102,6 +102,8 @@ opacity: .3;
    top: 1020px;
 transition: 1.5s ease-in;   
 border-radius: 40px;
+display: flex;
+flex-wrap: wrap;
 }
 .index:hover{
 
@@ -120,9 +122,12 @@ border-radius: 40px;
     height: 500px;
     width: 100%;
     z-index: 1;
+    display: flex;
 
 }
-
+.card4{
+    opacity: o;
+}
 
 
 .card2 {
