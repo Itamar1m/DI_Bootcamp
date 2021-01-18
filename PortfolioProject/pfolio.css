@@ -16,7 +16,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    box-shadow: inset 0 0 0 1000px rgba(90, 117, 204, 0.192);}
 
 .bgheight {
     height: 500px;
@@ -49,7 +49,7 @@ button:hover {
     height: 100%;
     display: flex;
     align-content: center;
-    margin-top: 120px;
+    margin-top: 80px;
     border: none;
     width: 95%;
     display: flex;
@@ -80,51 +80,23 @@ button:hover {
   background-color: transparent;
     grid-gap: 50px;
     margin-bottom: 100px;
-
-    transition: background 5s ease;
-
-}
-
-
-.index{
     background-image: url(https://previews.123rf.com/images/simpson33/simpson331405/simpson33140500046/28420461-code-of-html-language-on-white-background.jpg);
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0;
-    /* height: 750px; */
-    width: 100%;
-    z-index: 1;
-opacity: .3;
-    position:absolute;
-   top: 1020px;
-transition: 1.5s ease-in;   
-border-radius: 40px;
-display: flex;
-flex-wrap: wrap;
-}
-.index:hover{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    box-shadow: inset 0 0 0 1000px rgba(92, 122, 223, 0.192);
 
+  
 
 }
-.index2{
-    position:absolute;
-    top: 1990px;
-    background-image: url(https://media.istockphoto.com/vectors/seamless-calligraphy-handwriting-background-vector-id469286284);
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-     opacity: 0.3;
-    height: 500px;
-    width: 100%;
-    z-index: 1;
-    display: flex;
 
-}
+
+
+
 .card4{
     opacity: o;
 }
@@ -135,12 +107,13 @@ flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 30%;
+    width: 100%;
     transition: .1s ease-in;
     border-radius: 12px;
     border: .4px solid rgba(214, 211, 211, 0.452);
-    height: 250px!important;
+
     z-index: 2;
+    height: 200%!important;
    
    
 }
@@ -170,17 +143,24 @@ flex-wrap: wrap;
 h4 {
     width: 60%;
     text-align: center;
-    margin-top: 400px;
+    margin-top: 140px;
 
 }
 
 .blog {
+    background-image: url(https://media.istockphoto.com/vectors/seamless-calligraphy-handwriting-background-vector-id469286284);
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(90, 117, 204, 0.192);
 
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-evenly;
  
+    justify-content: space-evenly;
+    padding-bottom: 80px;
 
     width: 100%;
 
@@ -233,6 +213,8 @@ h6{
 .card3{
     transition: 1s ease-out;
     z-index: 2;
+    width: 800px!important;
+    opacity: .7;
 }
 .card3:hover{
     background-color: rgba(197, 172, 172, 0.493);
