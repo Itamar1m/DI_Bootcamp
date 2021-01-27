@@ -66,7 +66,7 @@ function checkBasket() {
         } else if ((item == x && amazonBasket[x] >= 1)) {
             console.log("Here you go!")
         } else {
-            console.log('Sorry none available')
+            console.log('Sorry none available') // These conditionals dont work properly ,trying to figure out why.
         }
     }
 }
@@ -112,6 +112,7 @@ function final() {
     let food = 0
     for (i = 0; i <cost.length; i++) {
         food +=cost[i]
+        //Still have 2 more to do...
 
 
     }
