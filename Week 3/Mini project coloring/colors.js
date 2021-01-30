@@ -30,7 +30,7 @@ let mainCellDiv = document.body.querySelector('.emptyCells')
 function emptyCellDiv() {
     for (let index = 0; index < 4200; index++) {
         let cell = document.createElement('div')
-        cell.style.border = '.5px solid lightgrey'
+        cell.style.border = '.2px solid lightgrey'
         cell.style.height = '100%'
         let mainCellDiv = document.body.querySelector('.emptyCells')
         mainCellDiv.appendChild(cell)
@@ -39,13 +39,15 @@ function emptyCellDiv() {
 emptyCellDiv()
 //making empty cells clickable
 for (let b = 0; b <= mainCellDiv.children.length - 1; b++) {
-    mainCellDiv.children[b].addEventListener('mouseup', clickableCells)
-    mainCellDiv.children[b].addEventListener('mousedown', clickableCells)
+    // mainCellDiv.children[b].addEventListener('mouseup', clickableCells)
+    mainCellDiv.children[b].addEventListener('click', clickableCells)
 }
 
 
 function clickableCells(event) {
+
     event.target.style.backgroundColor = backgroundArray
+
 }
 //making color cells clickable
 for (let c = 0; c <= mainCellDiv.children.length - 1; c++) {

@@ -1,0 +1,61 @@
+/*  General */
+p {
+  text-align: center;
+}
+/* General end */
+
+/* Search section */
+#fadeIn {
+  opacity: 0;
+  transition: 2.5s opacity;
+  text-align: center;
+  font-size:32px;
+  z-index: 5;
+  margin-bottom:15px;
+  cursor: default;
+}
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: white 3px solid !important;
+}
+.form-control-text {
+  width: 92.5%;
+  margin: 0 0 8px;
+  padding: 5px;
+  outline: none;
+  min-width: 50%;
+  min-height: 100px;
+  max-width: 92.5%;
+  max-height: 300px;
+}
+/* Search end */
+
+/* Card section */
+.row-cards {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.blog-panel {
+  min-height: 250px;
+  max-height: 400px;
+  margin: 5px;
+  overflow: auto;
+  word-wrap: break-word;
+  transition: 0.2s ease-in-out;
+}
+.blog-panel:hover {
+  transform: scale(1.05);
+  background-color: rgba(240, 240, 240, 0.800);
+  cursor: pointer;
+}
+/* Card section end */
+/* Button section */
+.section-follow .fa-4x { 
+  margin: 5px 10px;
+}
+/* Button section end */
+

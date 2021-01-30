@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dreamteam</title>
+</head>
+
+<body id="home" class="scrollspy">
+    <!-- navbar -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Dreamteam<i class="fas fa-code"></i></a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#search">Search</a>
+                        </li>
+                        <li>
+                            <a href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+      </li>
+        <li>
+            <a href="#team">Team</a>
+        </li>
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <!-- section slider -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/code1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h2>Are You A Software developer?</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-snall-only">Good for you... </h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/code2.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h2>A Platform Built For You</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-snall-only">We maintain the highest standards in design, reliability and performance. </h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/code3.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h2>A Home For Developers</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">We don't have beds, but we garantuee that you'll feel comfortable here.
+                    </h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- section: search -->
+    <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+        <div id="fadeIn">Are you a web developer?
+            <br>
+            <button type="button" id="btnYes" class="btn">Yes</button>
+            <button type="button" id="btnNo" class="btn">No</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Search</h3>
+                    <div class="input-field">
+                        <input type="text" class="input white grey-text autocomplete" id="autocomplete-input"
+                        placeholder="HTML, CSS, Javascript, DOM etc...">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3>Input Blog</h3>
+                    <form id="input-form">
+                        <div class="form-group">
+                            <input class="input white grey-text form-control-headline" type="text"
+                            placeholder="Headline">
+                            <textarea class=" white grey-text form-control-text" placeholder="Talk to us..."
+                            type="text"></textarea>
+                        </div>
+                        <button type="button" id="btn-color" class="btn  btn-submit">Submit</button>
+                        <button type="button" id="btn-color" class="btn  btn-clear">Clear</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section: Icon Boxes -->
+    <section id="blog" class="section section-icons grey lighten-4 center">
+      <div class="container">
+          <div class="row row-cards">
+              <div class="col s12 m6">
+                  <div class="card-panel blog-panel">
+
+                        <i class="fab fa-html5 large teal-text"></i>
+                        <h4>HTML</h4>
+                        <p>Hypertext Markup Language, a standardized system for tagging text files to achieve font,
+                            color, graphic, and hyperlink effects on World Wide Web pages.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel blog-panel">
+
+                        <i class="fab fa-css3-alt large teal-text"></i>
+                        <h4>CSS</h4>
+                        <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a
+                            document written in a markup language such as HTML. CSS is a cornerstone technology of the
+                            World Wide Web, alongside HTML and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel blog-panel">
+
+                        <i class="fab fa-js large teal-text"></i>
+                        <h4>JAVASCRIPT</h4>
+                        <p>JavaScript is a scripting or programming language that allows you to implement complex
+                            features on web pages — every time a web page does more than just sit there and display
+                            static information for you to look at — displaying timely content updates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section: Popular places -->
+    <section id="team" class="section section-popular scrollspy">
+        <div class="container">
+            <div class="row">
+                <h4 class="center">The <span class="teal-text">Dream</span>team</h4>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/face2.jpg" alt="">
+                        </div>
+                        <div class="card-content center">
+                            <span class="card-title">Achim</span>
+                            <br>
+                            <span class="teal-text"> Student</span> Web Developer
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/face1.jpg" alt="">
+                        </div>
+                        <div class="card-content center">
+                            <span class="card-title">Joshua</span>
+                            <br>
+                            <span class="teal-text"> Student</span> Web Developer
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/face3.jpg" alt="">
+                        </div>
+                        <div class="card-content center">
+                            <span class="card-title">Itamar</span>
+                            <br>
+                            <span class="teal-text "> Student</span> Web Developer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Follow us-->
+    <section class="section section-follow teal darken-2 white-text center">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2>Follow Dreamteam</h2>
+                    <p>Follow us for more interesting projects</p>
+                    <a href="https://www.facebook.com/zuck" target="_blank" class="white-text">
+                        <i class="fab fa-facebook fa-4x"></i>
+                    </a>
+                    <a href="https://blog.twitter.com/en_us/topics/company/2020/suspension.html" target="_blank"
+                        class="white-text">
+                        <i class="fab fa-twitter fa-4x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joshua-phillips-2550881b1/" target="_blank" class="white-text">
+                        <i class="fab fa-linkedin fa-4x"></i>
+                    </a>
+                    <a href="https://github.com/AchimGoral/Hackaton-Dreamteam/tree/main/Reworked" target="_blank" class="white-text">
+                        <i class="fab fa-github fa-4x"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/pin/1055599902206862/" target="_blank" class="white-text">
+                        <i class="fab fa-pinterest fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section: gallery -->
+    <section id="gallery" class="section section-galery scrollspy">
+        <div class="container">
+            <h4 class="center">
+                <span class="teal-text">How </span>we made this?
+            </h4><br>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="screenshots/whiteboard.jpg" alt="whiteboard"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/Materialize.jpg" alt="materialize"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/draft.jpg" alt="draft"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/github.jpg" alt="github"
+                        class="materialboxed responsive-img">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="screenshots/HTML.jpg" alt="HTML"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/CSS.jpg" alt="css"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/Js.jpg" alt="js"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/js1.jpg" alt="js1"
+                        class="materialboxed responsive-img">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="screenshots/js2.jpg" alt="js2"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/js4.jpg" alt="js4"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/js5.jpg" alt="js5"
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="screenshots/beer.jpg" alt="beach"
+                        class="materialboxed responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section: Contact -->
+    <section id="contact" class="section section-contact scrollspy">
+        <div class="conatainer">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel teal white-text center">
+                        <i class="material-icons">email</i>
+                        <h5>Contact Us</h5>
+                        <p>Appointment only after April 9th 2021</p>
+                    </div>
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h4>Locations</h4>
+                        </li>
+                        <li class="collection-item">Tel Aviv</li>
+                        <li class="collection-item">London</li>
+                        <li class="collection-item">Germany</li>
+                        <li class="collection-item">South Africa</li>
+                    </ul>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel grey lighten-3">
+                        <h5>Please fill out this form</h5>
+                        <h6>(We are currently studying, so dont expect a reply)</h6>
+                        <div class="input-field">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                            <input type="submit" value="Submit" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section teal darken-2 white-text center">
+        <p class="flow-text">The Dreamteam &copy; 2021 </p>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
