@@ -20,4 +20,4 @@ string=list(string)
 shuffled=random.shuffle(string)
 
 print(string)
-print(''.join(string))
+print(.)
