@@ -6,7 +6,6 @@ day=1-int(age[:2])
 print(year)
 candles=str(year)
 
-
 if month <0 or day <0:
 	
 	candles=int(year)-1
@@ -16,15 +15,7 @@ else:
 candles=str(candles)
 candles=candles[-1]	
 
-
 letteri='i'*int(candles)	
-
-
-
-
-
-
-
 
 print( f'     __  {letteri}  __ ' )
 print('    |  :H:A:P:P:Y  |'   )     
