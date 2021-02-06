@@ -1,57 +1,57 @@
-# # Exc 1
-# def display_msg():
-#     print('We are learning python. ')
+# Exc 1
+def display_msg():
+    print('We are learning python. ')
 
-# display_msg()       
+display_msg()       
 
 # # Exc 2
-# def favorite_book(title):
-#     print(f'My favourite book is {title}.')
-# favorite_book('Harry Potter')
+def favorite_book(title):
+    print(f'My favourite book is {title}.')
+favorite_book('Harry Potter')
 
-# # Exc 3
-# def describe_city(city,country='Israel'):
-#     print(f'{city} is in {country}')
-# describe_city('Jerusalem')
-# describe_city('Joburg','South Africa')
+# Exc 3
+def describe_city(city,country='Israel'):
+    print(f'{city} is in {country}')
+describe_city('Jerusalem')
+describe_city('Joburg','South Africa')
 
-# # Exc 4
-# import random 
-# def guess_num(num):
-#     random_num=random.randint(0,100)
-#     print(random_num)
-#     if num>100 or num <0:
-#         print('That number is out of range.')
-#     elif num ==random_num:
-#         print('You got it!')
-#     else:
-#         print(f'You failed your num was {num} the other was {random_num} ')    
+# Exc 4
+import random 
+def guess_num(num):
+    random_num=random.randint(0,100)
+    print(random_num)
+    if num>100 or num <0:
+        print('That number is out of range.')
+    elif num ==random_num:
+        print('You got it!')
+    else:
+        print(f'You failed your num was {num} the other was {random_num} ')    
 
-# guess_num(88)        
+guess_num(88)        
 
-# Exc 5
-# def  make_shirt(size="L",text="I love Python"):
+Exc 5
+def  make_shirt(size="L",text="I love Python"):
 
-#   else:
-#       print(f"The shirts size is {size} and '{text}' should be printed on it.")
+  else:
+      print(f"The shirts size is {size} and '{text}' should be printed on it.")
 
-# make_shirt(L,'Hello')
-# make_shirt(text='Hello',size=7)
+make_shirt(L,'Hello')
+make_shirt(text='Hello',size=7)
 
 
 
-# Exc 6
-# magicians=['adam','harry','david','jim']
-# def show_magicians():
-#     for i in magicians:
-#         print(i)
+Exc 6
+magicians=['adam','harry','david','jim']
+def show_magicians():
+    for i in magicians:
+        print(i)
 
-# def make_great():
-#     for i in range (len(magicians)):
-#         magicians[i]=magicians[i]+' the great'
+def make_great():
+    for i in range (len(magicians)):
+        magicians[i]=magicians[i]+' the great'
 
-# make_great()
-# show_magicians()
+make_great()
+show_magicians()
 
 # Exc 7
 current_year=2021
@@ -64,20 +64,22 @@ def get_age(year, month,day=0):
     if current_month-month<0:
         current_age=current_year-year-1
         print(current_age)        
-        return current_age
+      
     else:    
         current_age =current_year-year
         print(current_age)     
-        return current_age
+    return current_age
 
 # get_age(1900,1)
 
 def can_retire(gender,date_of_birth):
-    date_of_birth=date_of_birth.split('/')
+    year,month,day=date_of_birth.split('/')
+    # Put the int in these brackets instead of in the first function better.(int(year)etc...)
+    retirable=get_age(year,month,day)
 
-    if gender=='male' and get_age(date_of_birth[0],date_of_birth[1],date_of_birth[2]) >67:
+    if gender=='male' and retirable >67:
         print(True)
-    elif gender=='female' and get_age(date_of_birth[0],date_of_birth[1],date_of_birth[2]) >62 :
+    elif gender=='female' and retirable >62 :
         print(True)
     else:
         print(False)     
@@ -93,6 +95,5 @@ def x(integer):
     answer=int(integer)+int(int1)+int(int2)+int(int3)
     print(answer)
  
-
 x(3)
 
