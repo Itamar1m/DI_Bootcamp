@@ -1,0 +1,72 @@
+CREATE TABLE items(
+	id SERIAL PRIMARY KEY,
+	item VARCHAR (30) NOT NULL,
+	price SMALLINT NOT NULL	
+  )
+  CREATE TABLE customers(
+	fname VARCHAR (30)not null,
+	lname VARCHAR (30)	
+)
+INSERT INTO items (item,price)
+VALUES ('Small DESK',100),
+('Large desk',30),
+('Fan',80)
+
+INSERT INTO customers (fname,lname)
+VALUES ('Greg','Jones'),
+('Sandra ','Jones'),
+ ('Scott ','Scott '),
+ ('Trevor ','Green'),
+ ('Melanie','Johnson')
+ 
+
+SELECT * FROM public.customers
+SELECT * FROM public.items
+
+SELECT item,price FROM items where price >80
+
+SELECT fname,lname FROM customers where lname = 'Smith' 
+SELECT * FROM customers WHERE lname LIKE '%Scott '
+
+
+
+EXC 2
+CREATE TABLE students(
+	id SERIAL PRIMARY KEY,
+	lname VARCHAR(30),
+	fname VARCHAR (30)NOT NULL,
+	birth_date VARCHAR(10)
+)
+INSERT INTO students(fname,lname,birth_date)
+VALUES ('Marc','Benichou','02/11/1998'),
+('Yoan','Cohen','03/12/2010'),
+('Lea','Benichou','02/11/1998'),
+('Amelia','Dux','07/04/1996'),
+('David','Grez','14/06/2003'),
+('Omer','Simpson','03/10/1980')
+
+INSERT INTO students(fname,lname,birth_date)
+VALUES ('Itamar','Menachemi','09/04/1994')
+
+SELECT *FROM students 
+
+SELECT fname,lname FROM students
+
+1.SELECT fname,lname FROM students WHERE id =2
+
+2.SELECT fname,lname FROM students WHERE fname ='Marc' and lname ='Benichou' 
+
+3.SELECT fname,lname FROM students WHERE fname ='Marc'or lname ='Benichou'
+
+4.SELECT fname,lname FROM students WHERE fname LIKE '%a%' 
+
+5.SELECT fname,lname FROM students WHERE fname LIKE 'A%' 
+
+6.SELECT fname,lname FROM students WHERE fname like '%a_'
+
+
+
+Xp ninja
+1.SELECT fname,lname,birth_date FROM students where id <= 4 order by lname desc/asc 
+2.
+3.SELECT lname,fname,birth_date FROM students OFFSET 2 LIMIT 3

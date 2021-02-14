@@ -1,5 +1,6 @@
 # Xp gold
 import json
+
 class MenuManager:
     def __init__(self):
         f = open('menu.txt',) 
@@ -25,6 +26,25 @@ class MenuManager:
 
     def save_to_file(self):
         with open('menu.txt' ,'w')as f:
-            f.write(json.dumps(self.menu, indent=2))
+            json.dump(self.menu,f)
 
+               
 menu1=MenuManager()
+menu1.add_item('drink',10)
+menu1.remove_item('dirnk')
+menu1.save_to_file()
+print(menu1.menu)
+
+# import requests
+# response=requests.get('https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=dc6zaTOxFJmzC')
+# rsonse=response.json()
+# for item in response:
+#     if response['status']==200:
+#         print('hello')
+
+
+
+
+
+
+

@@ -1,51 +1,31 @@
-# # with open('blah.txt', 'w') as f:
-# #     f.write("hello")
 
-# # with open('blah.txt', 'a') as f:
-# #     f.write("hellos")
-# #     f.write('ad@gmail')
-# #     f.write('ad@gmail')    
-# #     f.write('ad@gmail')
+Exc 1
+import random
+def get_words_from_file():
+    with open('wordlist.txt',) as f:
+        words =f.readlines()
+    return words    
 
-
-# with open('blah.txt', 'r') as f:
-#    emails =  f.readlines()
-# for email in emails:
-#     email =email.strip('\n')
-#     print(f"Sending email to {email} ")   
-
-# thing=[
-#     {'name':'bob',
-#     { 'NUMS':[1,2,23]}
-#     {}
-# ]
-# Exc 1
-# import random
-# def get_words_from_file():
-#     with open('wordlist.txt',) as f:
-#         words =f.readlines()
-#     return words    
-
-# def get_random_sentence(length):
-#     words=get_words_from_file()
-#     random_words=random.choices(words,k=length)
-#     random_sentence=' '
-#     for  word in  random_words:
-#         word=word.strip('\n')
-#         random_sentence += f'{word} ' 
-#     print(random_sentence)
-#     return random_sentence   
+def get_random_sentence(length):
+    words=get_words_from_file()
+    random_words=random.choices(words,k=length)
+    random_sentence=' '
+    for  word in  random_words:
+        word=word.strip('\n')
+        random_sentence += f'{word} ' 
+    print(random_sentence)
+    return random_sentence   
    
-# def main():
-#     print("This is a random sentence generator:")   
-#     sentence_length=input("How long do you want your sentence to be?(2-20) ")
-#     if  type(sentence_length)!= int or  sentence_length <2 or  sentence_length >20 :
-#         print("Invalid input")
-#     else:
-#         get_random_sentence(sentence_length)    
-# main()
+def main():
+    print("This is a random sentence generator:")   
+    sentence_length=input("How long do you want your sentence to be?(2-20) ")
+    if  type(sentence_length)!= int or  sentence_length <2 or  sentence_length >20 :
+        print("Invalid input")
+    else:
+        get_random_sentence(sentence_length)    
+main()
     
-# Exc 2
+Exc 2
 import json
 sampleJson = """{ 
    "company":{ 
