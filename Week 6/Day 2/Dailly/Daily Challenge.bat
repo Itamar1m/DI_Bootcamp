@@ -1,5 +1,5 @@
 Daily Challenge
-Q1 - 0
+Q1 - 3
 Q2- 2
-Q3 -0
+Q3 -3
 Q4-2
