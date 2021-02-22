@@ -25,7 +25,7 @@ for i in range (10):
 
 # HOSTNAME = 'localhost'
 # USERNAME = 'postgres'
-# PASSWORD = 'postgres'
+# PASSWORD = 'postgres'da
 # DATABASE = 'country_api'
 # def db_update():
 #     request =requests.get('https://restcountries.eu/rest/v2/all')
