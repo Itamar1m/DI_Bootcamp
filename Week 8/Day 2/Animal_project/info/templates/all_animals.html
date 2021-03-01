@@ -1,14 +1,16 @@
 {%extends 'base.html'%}
 {%load static%}
+
 {% block content%}
 <h2>All Animals:</h2>
+
 <ul style= 'padding:0px; margin:0px'>
-{%for animal in content%}
- -- <a >{{animal.name}}</a> <br>
+{%for animal in  content%}
+ -- <a href='{{animal.link}}'>{{animal.name}}</a> <br>
 </ul >
 {%endfor%}
-{%endblock%}
-
+{
+    %endblock%}
 
 {% block title%}
 <title>
