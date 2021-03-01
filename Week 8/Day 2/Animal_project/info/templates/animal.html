@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+
+{% block content%}
+<h3>{{content.0.name.upper}}</h3>
+legs: {{content.0.legs}}
+<br>
+<br>
+max_speed: {{content.0.max_speed}}
+<br>
+<br>
+height: {{content.0.height}}
+<br>
+<br>
+weight:{{content.0.weight}}
+<br>
+{%endblock%}
+
+
+{% block title%}
+<title>
+    animals
+    </title>
+{%endblock%}

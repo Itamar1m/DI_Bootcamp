@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{% block content %}
+<ul>
+    {%for animal in content%}
+    <li> {{animal.family.name}}: {{animal.name}}</li>
+           
+        {%endfor%}
+    </ul>       
+{% endblock %}
+{% block title%}
+<title>
+    family
+</title>
+{%endblock%}
+

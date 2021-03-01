@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block content%}
+<h2>All Animals:</h2>
+<ul style= 'padding:0px; margin:0px'>
+{%for animal in content%}
+ -- <a >{{animal.name}}</a> <br>
+</ul >
+{%endfor%}
+{%endblock%}
+
+
+{% block title%}
+<title>
+    all_animals  
+</title>
+{%endblock%}
+
+
+

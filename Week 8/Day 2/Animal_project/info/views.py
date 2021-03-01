@@ -1,0 +1,28 @@
+from django.shortcuts import render
+from info.models import Family,Animal
+from django.http import HttpResponse
+
+def family(request,id):
+    animals=Animal.objects.filter(family=id)
+    context ={
+        'content':animals   
+    }
+    return render(request,'family.html',context)
+    
+def animal(request,id):
+    animals=Animal.objects.filter(id=id)
+
+    context={
+        'content':animals
+    }
+    return render(request,'animal.html',context)
+
+def all_animals(request):
+    all_animals=Animal.objects.all()
+    link = f'../animal/'
+    context={
+        'content':all_animals
+    }
+    return render(request,'all_animals.html',context)
+   
+
