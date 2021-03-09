@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block title%}
+<title>All gifs</title>
+{%endblock%}
+
+{%block content%}
+<h1>Gifs</h1>
+<div style='display: flex ;justify-content:space-evenly;flex-wrap: wrap;'>
+{%for gif in all_gifs%}
+<div style='display: flex;flex-direction: column;'><a href="{%url 'gif' gif.id%}"><img src="{{gif.url}}" alt="" style='height: 200px;'></a>{{gif.title}}</div>
+{%endfor%}
+</div>
+{%endblock%}

@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block title%}Add todo{%endblock%}
+
+{%block content %}
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        {{todo_list.as_table}}
+    </table>
+    <input type="submit">
+</form>
+
+
+{%endblock%}

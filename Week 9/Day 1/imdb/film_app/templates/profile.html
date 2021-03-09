@@ -1,0 +1,36 @@
+{%extends 'partials/base.html'%}
+
+{%block content%}
+{%include 'partials/navbar.html'%}
+<div style="margin: auto;">
+    <h4 style="margin-left:30%;margin-top:30px;margin-bottom: 60px; margin: ">Welcome {{user.get_full_name}} to your
+        profile page!</h4>
+</div>
+
+<div style=" display: flex;justify-content: space-between;width: 40%;margin: auto;">
+
+    <div>
+        <h5>These are your current details:</h5>
+        <p>Email adress: {{user.email}}</p>
+        <p>Username : {{user.username}}</p>
+        <p>First name: {{user.first_name}}</p>
+        <p>Last name: {{user.last_name}}</p>
+    </div>
+
+    <div>
+
+        <h5>Your liked films:</h5>
+        {%for film in user.liked_film.all%}
+        <div style="display: flex;justify-content: space-between;">
+
+            <div style="margin-right :5px">
+                {{film.title}}
+            </div>
+            <div> <a href="{%url 'dislike-film2' film.pk user.username%}"><button class="btn btn-secondary"
+                        style="font-size:10px">Dislike</button></a><br><br>
+            </div>
+        </div>
+        {%endfor%}
+        <div>
+        </div>
+        {%endblock%}

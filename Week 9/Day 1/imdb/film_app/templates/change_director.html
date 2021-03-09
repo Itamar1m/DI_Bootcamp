@@ -1,0 +1,9 @@
+{%extends 'partials/base.html'%}
+{%block content%}
+{%include 'partials/navbar.html'%}
+<form method="POST">
+    {%csrf_token%}
+    {{form}}
+    <input type="submit">
+</form>
+{%endblock%}

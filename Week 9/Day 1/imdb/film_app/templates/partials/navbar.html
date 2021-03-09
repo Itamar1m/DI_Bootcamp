@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(173, 89, 89, 0.589);"  >
+  <a class="navbar-brand" href="{% url 'home-page'%}">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="{%url 'add-film'%}">Add Film <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="{%url 'add-director'%}">Add Director</a>
+    </li>
+    {%if user.is_authenticated%}
+    <li class="nav-item active">
+      <a class="nav-link" href="{%url 'profile' user.pk%}">My Profile<span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+  <span style="margin-right: 250px;">You are logged in as <b>{{user.username}}</b></span>
+  <a href="{%url 'logout'%}"><button class="btn btn-light" style="margin-right:10px;">Logout</button></a>
+    {%else%}
+    <a href="{%url 'login'%}"><button class="btn btn-primary" style="margin-right:10px;">Login</button></a>
+  {%endif%}
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+
+</nav>

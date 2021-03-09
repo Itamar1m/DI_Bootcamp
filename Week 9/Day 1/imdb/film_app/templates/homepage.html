@@ -1,0 +1,33 @@
+{%extends 'partials/base.html'%}
+{%block content%}
+{%include 'partials/navbar.html'%}
+<h3>All films:</h3>
+<div style='display: grid; padding: 10px; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;grid-gap: 2px;'>
+    {%for film in films%}
+
+    <div class="card" style="width: 18rem;height: 600px;">
+        <img class="card-img-top" src="{{film.image_url}}" alt="Card image cap" style="height: 380px;">
+        <div class="card-body">
+          <h5 class="card-title">{{film.title}}</h5>
+          Relase date: {{film.release_date}}
+          <br>
+          Genre: {%for item in film.category.all%} {{item}} {%endfor%}
+          <br>
+          Director: {%for item in film.director.all%} {{item}} {%endfor%}
+          <br>
+          Available in: {%for item in film.available_in_countries.all%} {{item}} {%endfor%}
+          <br>
+        </div>
+        <div class="card-body">
+          {%if film in user.liked_film.all%}
+          <a href="{%url 'dislike-film' film.pk user.username%}"><i class="fas fa-star"></i></a>
+           {%else%}
+         <a href="{%url 'like-film' film.pk user.username%}" ><i class="far fa-star"></i></a>
+           {%endif%}
+           <s><a  href="{%url 'delete-film' film.pk%}" style="margin-left: 180px ; font-size: 12px;">Delete</a></s>
+         </a>
+        </div>
+      </div>
+    {%endfor%}
+</div>
+{%endblock%}

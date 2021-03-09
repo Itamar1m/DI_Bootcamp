@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block content%}
+<form method="POST" >
+    {%csrf_token%}
+    <div class="form-group">
+        <table>
+            {{add_customer.as_table}}
+            <input type="submit">
+        </table>     
+    </div>
+</form>
+{%endblock%}

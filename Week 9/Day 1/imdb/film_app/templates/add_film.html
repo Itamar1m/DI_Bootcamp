@@ -1,0 +1,15 @@
+{%extends 'partials/base.html'%}
+{%block content%}
+{% load crispy_forms_tags %}
+{%include 'partials/navbar.html'%}
+<div style="display: flex;justify-content: center; margin-bottom: 10px;margin-top: 20px;"><h3 > Add Film</h3></div>
+<div style="margin: auto;width: 30%;">
+    <form method='POST'>
+        {%csrf_token%}
+        {{form|crispy}}
+       <a href="{%url 'add-director'%}">Add Director</a>
+       <br>
+       <input type="submit" style="margin-top:10px; margin-left: 170px;">
+    </form>
+</div>
+{%endblock%}

@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Vehicles{% endblock %}
+{% block content %}
+<h1>All vehicles</h1>
+{% for vehicle in vehicles %}
+<div style="display: inline-flex;">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>{{vehicle.name}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for v in vehicle.vehicle_set.all %}
+            <tr>
+                <td>
+                    {{v.size}}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endfor %}
+{% endblock %}

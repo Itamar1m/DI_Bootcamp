@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block title%}
+<title>gif</title>
+{%endblock%}
+
+{%block content%}
+
+<div style="display: flex;flex-direction: column;height: 250px;">
+    <div style="height: 100px;"><img src="{{gifs.url}} " alt=""> </div>
+<div>Title:{{gifs.title}}
+<br>
+        Category:{{gif.all_gifs.all}}
+
+</div>
+
+</div>
+{%endfor%}
+{%endblock%}

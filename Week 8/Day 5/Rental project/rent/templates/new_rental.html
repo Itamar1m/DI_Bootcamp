@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+
+{% block content %}
+<table>
+    <form method="POST">
+        {{add_rental.as_table}}
+        <input type="submit">
+    </form>
+</table>
+
+{% endblock %}

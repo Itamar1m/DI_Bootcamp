@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Customers{% endblock %}
+{% block content %}
+<table class="table table-hover">
+    <tr>
+        <th>Lastname</th>
+        <th>Firstname</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Phone</th>
+    </tr>
+    {% for customer in customers %}
+    <tr>
+        <td>{{customer.last_name}}</td>
+        <td>{{customer.first_name}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.city}}</td>
+        <td>{{customer.phone_number}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,13 @@
+{%extends 'partials/base.html'%}
+{% load crispy_forms_tags %}
+{%block content%}
+<div style="display: flex;justify-content: center;margin-top: 80px;"><h3>Log In</h3></div>
+<div style="width :40%;margin:auto;">
+    <form method="post">
+        {%csrf_token%}
+        {{my_form|crispy}}
+        <button class="btn btn-secondary">Login</button>
+    </form>
+        <a href="{%url 'home-page'%}"><button class="btn btn-primary" style="margin-top: 10px;">Back to main</button></a>
+</div>
+{%endblock%}
